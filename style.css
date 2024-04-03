@@ -1,0 +1,7 @@
+#menu-toggle {
+  z-index: 10; /* Ajusta a camada do botão do menu */
+}
+#menu {
+  z-index: 9; /* Ajusta a camada do menu */
+}
+
