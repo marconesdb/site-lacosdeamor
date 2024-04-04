@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Responsiva com Tailwind CSS</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container mx-auto flex items-center justify-between">
+      <div>
+        <a href="#" class="text-white text-xl font-bold"><img src="lacosdeamor-associacao/zR55TzGa4YohS0UJVRWNU-transformed (1).png" alt="" class="w-40 h-24"></a>
+      </div>
+      <div class="hidden md:block">
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="text-white hover:text-gray-300">Home</a></li>
+          <li><a href="#" class="text-white hover:text-gray-300">Sobre</a></li>
+          <li><a href="#" class="text-white hover:text-gray-300">Serviços</a></li>
+          <li><a href="#" class="text-white hover:text-gray-300">Contato</a></li>
+        </ul>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-white hover:text-gray-300 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu Mobile -->
+  <div id="mobile-menu" class="md:hidden bg-gray-400 hidden">
+    <ul class="text-white">
+      <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Home</a></li>
+      <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Sobre</a></li>
+      <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Serviços</a></li>
+      <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Contato</a></li>
+    </ul>
+  </div>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

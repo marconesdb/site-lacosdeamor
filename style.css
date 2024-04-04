@@ -5,3 +5,32 @@
   z-index: 9; /* Ajusta a camada do menu */
 }
 
+.navbar {
+  background-color: #FF914D;
+}
+
+
+/* Animação do traço */
+.navbar ul li {
+  position: relative; /* Adicionando posição relativa para que os elementos ::after se posicionem corretamente */
+}
+
+/* Adicionando estilo ao traço */
+.navbar ul li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Ajuste conforme necessário para a posição do traço */
+  width: 0;
+  height: 2px;
+  background-color: white; /* Cor do traço */
+  transition: width 0.3s ease; /* Velocidade da animação */
+  opacity: 0; /* Inicialmente, o traço está invisível */
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+  opacity: 1; /* Torna o traço visível ao passar o mouse sobre o item do menu */
+}
+
+
