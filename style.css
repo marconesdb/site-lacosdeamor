@@ -37,3 +37,29 @@
 .color{
   background-color: #FF914D;
 }
+
+/* Estilos para a barra de navegação */
+.navbar {
+  position: fixed; /* Torna a barra de navegação fixa */
+  top: 0; /* Ajusta a posição no topo */
+  left: 0; /* Ajusta a posição à esquerda */
+  width: 100%; /* Define a largura total */
+  z-index: 1000; /* Garante que a barra de navegação esteja no topo */
+}
+
+/* Estilos para o conteúdo principal */
+.main-content {
+  padding-top: 80px; /* Ajusta o espaço superior para evitar sobreposição com a barra de navegação */
+  /* Adicione mais estilos conforme necessário */
+}
+
+
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
