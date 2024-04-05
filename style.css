@@ -34,4 +34,6 @@
   opacity: 1; /* Torna o traço visível ao passar o mouse sobre o item do menu */
 }
 
-
+.color{
+  background-color: #FF914D;
+}

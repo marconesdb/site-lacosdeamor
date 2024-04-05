@@ -72,65 +72,48 @@
     </div>
 </section> -->
 
-<!-- Carousel -->
  <!-- Carousel -->
- <div class="swiper-container">
-  <div class="swiper-wrapper">
-    <!-- Slide 1 -->
-    <div class="swiper-slide">
-      <section class="relative py-16 bg-gradient-to-r from-pink-500 to-white text-white">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold mb-4">Juntos podemos fazer a diferença!</h1>
-            <p class="text-lg mb-8">Seja parte da mudança, apoie nossa causa.</p>
-            <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full">Doar Agora</a>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </section>
-    </div>
-    <!-- Slide 2 -->
-    <div class="swiper-slide">
-      <section class="relative py-16 bg-gradient-to-r from-blue-500 to-white text-white">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold mb-4">Construindo juntos um futuro melhor!</h1>
-            <p class="text-lg mb-8">Faça parte do nosso projeto de transformação social.</p>
-            <a href="#" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full">Participar Agora</a>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </section>
-    </div>
-    <!-- Slide 3 -->
-    <div class="swiper-slide">
-      <section class="relative py-16 bg-gradient-to-r from-purple-500 to-white text-white">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold mb-4">Junte-se a nós e faça a diferença!</h1>
-            <p class="text-lg mb-8">Cada contribuição é um passo para um mundo melhor.</p>
-            <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">Contribuir Agora</a>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </section>
-    </div>
+
+ <div class="flex overflow-x-auto justify-center">
+  <!-- Slide 1 -->
+  <div class="flex-shrink-0 w-screen md:w-auto">
+    <section class="relative py-16 bg-red-500 to-white text-white">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold mb-4 ml-4 mr-4">Juntos podemos fazer a diferença!</h1>
+        <p class="text-lg mb-8 ml-4 mr-4">Seja parte da mudança, apoie nossa causa.</p>
+        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full">Doar Agora</a>
+      </div>
+    </section>
+  </div>
+  <!-- Slide 2 -->
+  <div class="flex-shrink-0 w-screen md:w-auto">
+    <section class="color relative py-16 bg-yellow-600 text-white">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold mb-4 ml-4 mr-4">Construindo juntos um futuro melhor!</h1>
+        <p class="text-lg mb-8 ml-4 mr-4">Faça parte do nosso projeto de transformação social.</p>
+        <a href="#" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full">Participar Agora</a>
+      </div>
+    </section>
+  </div>
+  <!-- Slide 3 -->
+  <div class="flex-shrink-0 w-screen md:w-auto">
+    <section class="relative py-16 bg-pink-400">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold mb-4 ml-4 mr-4 text-white">Junte-se a nós e faça a diferença!</h1>
+        <p class="text-lg mb-8 ml-4 mr-4 text-white">Cada contribuição é um passo para um mundo melhor.</p>
+        <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">Contribuir Agora</a>
+      </div>
+    </section>
   </div>
 </div>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    loop: true, // Permitir loop infinito
-    autoplay: {
-      delay: 5000, // Tempo entre os slides em milissegundos (5 segundos neste caso)
-      disableOnInteraction: false, // Não desativar a transição automática quando o usuário interagir com o slide
-    },
-  });
-</script>
 
-<!-- Fim- Caroussel -->
+
+
+
+<!-- Fim - Caroussel -->
+
+
 
 
 <!-- Sobre a Associação -->
@@ -139,7 +122,7 @@
         <h2 class="text-3xl font-bold mb-8 text-center">Nossa História</h2>
         <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
             <div class="md:w-1/2 mb-4">
-                <img src="https://via.placeholder.com/600x400" alt="Imagem sobre a associação" class="w-full rounded-lg">
+                <img src="img/Foto-Rosana.jpeg" alt="Imagem sobre a associação" class="w-80 h-80 rounded-lg">
             </div>
             <div class="md:w-1/2">
                 <p class="mb-4">A Associação Solidária é uma organização dedicada a ajudar comunidades carentes em todo o mundo. Nosso objetivo é proporcionar educação, saúde e oportunidades para aqueles que mais precisam.</p>
@@ -151,11 +134,12 @@
 </section>
 
 <!-- Projetos e Programas -->
-<!-- Projetos e Programas -->
+
+
 <section class="py-16 bg-gray-200">
   <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold mb-8 text-center">Nossos Projetos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Projeto 1 -->
           <div class="bg-white p-6 rounded-lg shadow-md">
               <img src="img/Design sem nome (88).png" alt="Projeto 1" class="w-full h-40 object-cover mb-4 rounded-md">
@@ -181,6 +165,7 @@
   </div>
 </section>
 
+<!-- Fim -->
 
 <!-- Fim -->
   <script>
