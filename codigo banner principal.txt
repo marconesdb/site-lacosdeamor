@@ -1,0 +1,43 @@
+
+ <!-- Carousel -->
+
+ <div class="flex overflow-x-auto justify-center">
+  <!-- Slide 1 -->
+  <div class="flex-shrink-0 w-screen md:w-auto">
+    <section class="relative py-16 rounded-2xl mr-4 bg-red-500 to-white text-white mr-4">
+      <div class="container mx-auto text-center">
+        <h1 class="text-2xl font-bold mb-4 ml-4 mr-4">Juntos podemos fazer a diferença!</h1>
+        <p class="text-lg mb-8 ml-4 mr-4">Seja parte da mudança, apoie nossa causa.</p>
+        <a href="#" class=" bg-pink-500 hover:bg-pink-600  text-white font-bold py-2 px-6 rounded-full">Doar Agora</a>
+      </div>
+    </section>
+  </div>
+  <!-- Slide 2 -->
+  <div class="flex-shrink-0 w-screen md:w-auto">
+    <section class="color relative py-16 bg-yellow-600 text-white rounded-2xl ml-4 mr-4">
+      <div class="container mx-auto text-center">
+        <h1 class="text-2xl font-bold mb-4 ml-4 mr-4">Construindo juntos um futuro melhor!</h1>
+        <p class="text-lg mb-8 ml-4 mr-4">Faça parte do nosso projeto de transformação social.</p>
+        <a href="https://api.whatsapp.com/send?phone=3888278836" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full">Participar Agora</a>
+      </div>
+    </section>
+  </div>
+  <!-- Slide 3 -->
+  <div class="flex-shrink-0 w-screen md:w-auto">
+    <section class="relative py-16 rounded-2xl ml-4 bg-pink-400 mr-4">
+      <div class="container mx-auto text-center">
+        <h1 class="text-2xl font-bold mb-4 ml-4 mr-4 text-white">Junte-se a nós e faça a diferença!</h1>
+        <p class="text-lg mb-8 ml-4 mr-4 text-white">Cada contribuição é um passo para um mundo melhor.</p>
+        <a href="#" class=" text-white font-bold py-2 px-6 rounded-full bg-blue-500 hover:bg-blue-600">Contribuir Agora</a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+
+
+
+<!-- Fim - Caroussel -->
+
+
