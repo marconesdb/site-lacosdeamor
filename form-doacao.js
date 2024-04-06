@@ -1,19 +1,13 @@
-
-(function () {
-    emailjs.init("service_ib4lax8"); // Substitua "service_ib4lax8" pelo seu ID de serviço correto do EmailJS
-
-    document.querySelector('form').addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        const formData = new FormData(this);
-
-        emailjs.sendForm('service_ib4lax8', 'template_n4sjb28', formData)
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                alert('Mensagem enviada com sucesso!');
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.');
-            });
-    });
-})();
+document.getElementById('myForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    console.log(this);
+    emailjs.sendForm('service_ib4lax8', 'template_n4sjb28', this)
+        .then(function(result) {
+            alert("Success!! Your query is generated in our system.");
+            console.log(result.text);
+            document.getElementById('myForm').reset();
+        }, function(error) {
+            alert("Error! Something went wrong.");
+            console.log(error.text);
+        });
+});
