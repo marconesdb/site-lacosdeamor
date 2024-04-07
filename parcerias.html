@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laços de Amor - Parcerias</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body class="mt-36">
+  
+  <nav class="navbar bg-gray-100 font-semibold">
+    <div class="container mx-auto flex items-center justify-between">
+      <div>
+        <a href="index.html" class="text-black text-xl font-bold"><img src="./img/Laços.png" alt="" class="w-40  ml-4 rounded-2xl mt-4 mb-4"></a>
+      </div>
+      <div class="hidden md:flex flex-grow justify-end items-center space-x-4 mr-4">
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="text-black hover:text-pink-500 inline-block border-b-2 border-transparent hover:border-pink-500">Início</a></li>
+          <!-- Dropdown -->
+          <li class="relative">
+            <a href="#" class="text-black hover:text-pink-500 inline-block border-b-2 border-transparent hover:border-pink-500">Serviços</a>
+            <ul class="absolute hidden text-gray-700 bg-white py-1 rounded shadow-md w-32 z-10">
+              <li><a href="index.html" class="block px-4 py-2 hover:bg-gray-200">Quem Somos</a></li>
+              <li><a href="o-que-fazemos.html" class="block px-4 py-2 hover:bg-gray-200">O que fazemos</a></li>
+              <li><a href="galeria.html" class="block px-4 py-2 hover:bg-gray-200">Galeria</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Nossos Projetos</a></li>
+            </ul>
+          </li>
+          <!-- End Dropdown -->
+          <li><a href="doacao.html" class="text-black hover:text-pink-500 inline-block border-b-2 border-transparent hover:border-pink-500">Como Ajudar</a></li>
+          <li><a href="#" class="text-black hover:text-pink-500 inline-block border-b-2 border-transparent hover:border-pink-500">Parcerias</a></li>
+          <li><a href="contato.html" class="text-black hover:text-pink-500 inline-block border-b-2 border-transparent hover:border-pink-500">Contato</a></li>
+          <li><a href="#" class="text-black hover:text-pink-500 inline-block border-b-2 border-transparent hover:border-pink-500">FAC</a></li>
+        </ul>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-black hover:text-gray-300 focus:outline-none mr-4">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="mobile-menu" class="md:hidden bg-gray-400 hidden">
+    <ul class="text-white">
+      <li><a href="index.html" class="block py-2 px-4 hover:bg-pink-500">Início</a></li>
+      <li class="relative">
+        <a href="#" class="block py-2 px-4 hover:bg-pink-500">Serviços</a>
+        <ul class="absolute hidden text-gray-700 bg-white py-1 rounded shadow-md w-32 z-10">
+          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Quem Somos</a></li>
+          <li><a href="o-que-fazemos.html" class="block px-4 py-2 hover:bg-gray-200">O que fazemos</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Nossos Projetos</a></li>
+          <li><a href="galeria.html" class="block px-4 py-2 hover:bg-gray-200">Galeria</a></li>
+        </ul>
+      </li>
+      <li><a href="doacao.html" class="block py-2 px-4 hover:bg-pink-500">Como Ajudar</a></li>
+      <li><a href="#" class="block py-2 px-4 hover:bg-pink-500">Parcerias</a></li>
+      <li><a href="contato.html" class="block py-2 px-4 hover:bg-pink-500">Contato</a></li>
+      <li><a href="#" class="block py-2 px-4 hover:bg-pink-500">FAC</a></li>
+    </ul>
+  </div>
+   <!-- Banner -->
+   <!-- <section class="py-16 bg-gradient-to-r from-pink-500 to-white text-white">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold mb-4">Juntos podemos fazer a diferença!</h1>
+        <p class="text-lg mb-8">Seja parte da mudança, apoie nossa causa.</p>
+        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full">Doar Agora</a>
+    </div>
+</section> -->
+
+ 
+
+  
+  <!-- Fim -->
+  
+  <!-- Fim -->
+    <script>
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+      });
+  
+      // Para abrir o dropdown no clique em telas menores
+      var dropdownToggle = document.querySelectorAll('.relative');
+      dropdownToggle.forEach(function(item) {
+        item.addEventListener('click', function() {
+          var submenu = item.querySelector('ul');
+          submenu.classList.toggle('hidden');
+        });
+      });
+    </script>
+  
+  
+  
+  
+  
+    <!-- Footer -->
+  <footer class="bg-gradient-to-r from-gray-600 to-gray-400 text-white mt-20">
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <!-- Logo -->
+            <div class="mb-4 md:mb-0 md:w-1/3">
+                <a href="index.html"><img src="/img/Laços.png" alt="Logo" class="w-40 rounded-2xl mt-4 mb-4 shadow-lg mx-auto md:mx-0"></a>
+            </div>
+            <!-- Links -->
+            <div class="text-center md:text-left md:w-1/3">
+                <h2 class="text-xl font-semibold mb-4">Laços de Amor - Associação Solidária </h2>
+                <p class="text-sm text-gray-300">Todos os direitos reservados © 2024 Laços de Amor - Associação Solidária Filantrópica</p>
+  
+                <ul>
+                    <li>
+                        <span class="block py-2 hover:text-gray-300">
+                            <i class="fas fa-map-marker-alt mr-2"></i>Rua: João Pereira Lima, Nº 289a Bairro: Vera Cruz, CEP: 39401- 435
+                        </span>
+                    </li>
+                    <li>
+                        <span class="block py-2 hover:text-gray-300">
+                            <i class="far fa-envelope mr-2"></i>E-mail: ass.lacosdeamor@gmail.com
+                        </span>
+                    </li>
+                    <li>
+                        <span class="block py-2 hover:text-gray-300">
+                            <i class="fas fa-phone-alt mr-2"></i>Telefone: (38) 8827-8836
+                        </span>
+                    </li>
+                    <li>
+                        <span class="block py-2 hover:text-gray-300">
+                            <i class="fas fa-building mr-2"></i>CNPJ: 43.731.221/0001-42
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Redes Sociais -->
+            <div class="text-center md:text-right md:w-1/3">
+                <h2 class="text-xl font-semibold mb-4">Redes Sociais</h2>
+                <ul>
+                    <li>
+                        <a href="#" class="block py-2 hover:text-gray-300">
+                            <i class="fab fa-facebook-f mr-2"></i>Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/lacos_deamor_montesclaros/" class="block py-2 hover:text-gray-300">
+                            <i class="fab fa-instagram mr-2"></i>Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=3888278836" class="block py-2 hover:text-gray-300">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+
+<!-- Fim do Rodapé -->
+</body>
+</html>
