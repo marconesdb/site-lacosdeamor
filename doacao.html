@@ -117,36 +117,36 @@
                <div class="form bg-pink-200 rounded-lg shadow-md p-6 w-full md:w-1/2 ">
                 <h2 class="text-xl font-semibold mb-4 text-center">Faça sua Doação</h2>
                 <p class="text-gray-700 mb-4 text-center">Sua doação fará a diferença na vida das crianças e mulheres atendidas pela Associação Laços de Amor. Envie seu comprovante de doação e deixe uma mensagem para nós.</p>
-                <form id="myForm" class="space-y-4" enctype="multipart/form-data">
+                <form id="myForm" class="space-y-4" enctype="multipart/form-data" action="https://formsubmit.co/67f30ecf2f839e43fdbe87d3ba89de25" method="POST">
                     <div>
                         <label for="valor" class="block text-gray-700 font-semibold">Valor da Doação</label>
-                        <input type="text" id="valor" name="valor" placeholder="R$0,00"
+                        <input type="text" id="valor" name="valor" required  placeholder="R$0,00"
                             class="w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                     </div>
                     <div>
                         <label for="nome" class="block text-gray-700 font-semibold">Nome Completo</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo"
+                        <input type="text" id="nome" name="nome"  required placeholder="Seu nome completo"
                             class="w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                     </div>
                     <div>
                         <label for="email" class="block text-gray-700 font-semibold">Endereço de Email</label>
-                        <input type="email" id="email" name="email" placeholder="seuemail@example.com"
+                        <input type="email"  required id="email" name="email" placeholder="seuemail@example.com"
                             class="w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                     </div>
                     <div>
                         <label for="telefone" class="block text-gray-700 font-semibold">Telefone</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000"
+                        <input type="tel"  required id="telefone" name="telefone" placeholder="(00) 00000-0000"
                             class="w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                     </div>
                     <div>
                         <label for="mensagem" class="block text-gray-700 font-semibold">Mensagem Adicional (opcional)</label>
-                        <textarea id="mensagem" name="mensagem" rows="4"
+                        <textarea id="mensagem" name="mensagem" rows="4"  required
                             placeholder="Digite aqui uma mensagem adicional (opcional)"
                             class="w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"></textarea>
                     </div>
                     <div>
                         <label for="comprovante" class="block text-gray-700 font-semibold">Anexar seu comprovante de doação</label>
-                        <input type="file" id="comprovante" name="comprovante"
+                        <input type="file" id="comprovante"  required name="comprovante"
                             class="w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                     </div>
                     <div class=" text-center">
