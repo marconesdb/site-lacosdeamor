@@ -10,9 +10,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="/img/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body   class="bg-gray-200">
+    
     <!-- Main Section -->
     <section class="flex flex-col items-center justify-center h-screen bg-white relative">
         <!-- Hamburger Menu Icon -->
@@ -45,6 +47,10 @@
             <img src="/img/Laços.png" alt="" class="">
             
         </div>
+</div>
+
+</div>
+
         <!-- Fim da Section Principal  -->
         
     </section>
@@ -62,9 +68,10 @@
 <!-- Fim -->
 
 <!-- Quem Somos -->
-<section id="home" class="mt-8 mr-4 ml-4 py-12 ">
-  <div class="container mx-auto px-4 bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-pink-300 to-pink-100">
-      <div class="text-center ">
+<section id="home" class="mt-8 mr-4 ml-4 py-12" data-aos="fade-up"
+data-aos-anchor-placement="top-center">
+  <div class="container mx-auto px-4 bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-pink-300 to-pink-100 " >
+      <div class="text-center " >
           <h2 class="text-3xl font-semibold mb-6 mt-8">Quem Somos</h2>
           <p class="text-lg text-gray-700 leading-relaxed text-justify mb-4 bg-purple-200 p-4 rounded-2xl">
               A Associação  Laços de Amor é uma entidade civil de caráter Filantrópico, beneficiente, assistencial, é uma organização sem fins lucrativos dedicada a acolher, cuidar e proporcionar assistência a pessoas necessitadas, sem qualquer discriminação de nacionalidade, idade, credo ou cor. Fundada em 2019, nossa missão é promover o bem-estar social, oferecendo apoio e recursos para famílias em situação de vulnerabilidade. Temos por premissa contribuir com o futuro de milhares de pessoas e construir uma sociedade democrática, justa e solidária.  
@@ -78,7 +85,8 @@
 
 
  <!-- Ícone com laços -->
- <div class="relative">
+ <div class="relative" data-aos="fade-up"
+ data-aos-anchor-placement="top-center">
   
     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <!-- Imagem -->
@@ -89,8 +97,9 @@
 
 
 <!-- Missão -->
-<section class="mt-8 mr-4 ml-4 py-12">
-    <div class="container mx-auto px-4 bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-pink-300 to-pink-100">
+<section class="mt-8 mr-4 ml-4 py-12" >
+    <div class="container mx-auto px-4 bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-pink-300 to-pink-100" data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
         <div class="text-center">
             <h2 class="text-3xl font-semibold mb-6 mt-8">Missão</h2>
             <div class="missao flex flex-col md:flex-row justify-center items-center"> <!-- Adicionado justify-center e items-center para centralizar -->
@@ -110,7 +119,8 @@
 <!-- Fim Missão -->
 
  <!-- Ícone com laços -->
- <div class="relative">
+ <div class="relative" data-aos="fade-up"
+ data-aos-anchor-placement="top-center">
   
     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <!-- Imagem -->
@@ -123,7 +133,8 @@
 <!--Visão -->
 
 <section class="mt-8 mr-4 ml-4 py-12">
-    <div class="container mx-auto px-4 bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-pink-300 to-pink-100 ">
+    <div class="container mx-auto px-4 bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-pink-300 to-pink-100 " data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
         <div class="text-center">
             <h2 class="text-3xl font-semibold mb-6 mt-8">Visão</h2>
             <div class="missao flex flex-col md:flex-row justify-center items-center"> <!-- Adicionado justify-center e items-center para centralizar -->
@@ -147,7 +158,8 @@
 
 
  <!-- Ícone com laços -->
- <div class="relative">
+ <div class="relative" data-aos="fade-up"
+ data-aos-anchor-placement="top-center">
   
     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <!-- Imagem -->
@@ -159,8 +171,10 @@
 
 
 <!-- Valores -->
-<section class="mt-8 mr-4 ml-4 py-12">
-    <div class="container mx-auto px-4 bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-pink-300 to-pink-100">
+<section class="mt-8 mr-4 ml-4 py-12"
+>
+    <div class="container mx-auto px-4 bg-white shadow-lg rounded-lg overflow-hidden bg-gradient-to-r from-pink-300 to-pink-100" data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
         <div class="text-center">
             <h2 class="text-3xl font-semibold mb-6 mt-8">Valores</h2>
             <div class="missao flex flex-col md:flex-row justify-center items-center"> <!-- Adicionado justify-center e items-center para centralizar -->
@@ -243,7 +257,10 @@
     </div>
 </footer>
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
     <script src="script.js"></script>
 </body>
 
